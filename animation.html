@@ -7,10 +7,15 @@
   <body>
     <h1>The Falling Tree</h1>
     <svg width="80%" viewBox="00 100 500">
-      <circle cx="62" cy="50" r="35" fill="green"/>
-          <animate attributeName="fill" from="blue" to="saddlebrown" begin="indefinite" dur="10s" id="one"/>
+      <circle cx="62" cy="50" r="35" fill="green">
+          <animate attributeName="fill" from="green" to="purple" repeatCount="indefinite" dur="5s" id="circle-animation"/>
+          <animate attributeName="cx" from="62" to="200" dur="5s" repeatCount="indefinite"/>
+          <animate attributeName="cy" from="50" to="150" dur="5s" repeatCount="indefinite"/>
       </circle>
-      <line x1="62" y1="85" x2="62" y2="200" stroke="saddlebrown" stroke-width="10"/>
+      <line x1="62" y1="85" x2="62" y2="145" stroke="saddlebrown" stroke-width="10">
+          <animate attributeName="x1" from="62" to="200" dur="5s" repeatCount="indefinite"/>
+          <animate attributeName="y1" from="45" to="150" dur="5s" repeatCount="indefinite"/>
+      </line>
     </svg>
   </body>
 </html>

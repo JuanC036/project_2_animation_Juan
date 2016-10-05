@@ -1,6 +1,8 @@
+@import 'https://fonts.googleapis.com/css?family=Ruslan+Display';
 svg{
   background-color: darkgreen;
 }
 h1{
   color: blue;
+  font-family: Ruslan Display;
 }

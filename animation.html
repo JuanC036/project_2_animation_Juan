@@ -6,16 +6,28 @@
   </head>
   <body>
     <h1>The Falling Tree</h1>
-    <svg width="80%" viewBox="00 100 500">
+    <p>The last tree alive was still standing. It was 999 years old. The next day he would be 1,000 years old and he would still be standing. But then, he felt his roots give away. Soon, he felt himself falling and it was sad. He was sad because he didn't stay standing for 1,000 years.</p>
+    <svg width="80%" viewBox="00 00 500 200">
       <circle cx="62" cy="50" r="35" fill="green">
           <animate attributeName="fill" from="green" to="purple" repeatCount="indefinite" dur="5s" id="circle-animation"/>
           <animate attributeName="cx" from="62" to="200" dur="5s" repeatCount="indefinite"/>
           <animate attributeName="cy" from="50" to="150" dur="5s" repeatCount="indefinite"/>
       </circle>
-      <line x1="62" y1="85" x2="62" y2="145" stroke="saddlebrown" stroke-width="10">
+      <line x1="62" y1="85" x2="62" y2="145" stroke="saddlebrown" stroke-width="15">
           <animate attributeName="x1" from="62" to="200" dur="5s" repeatCount="indefinite"/>
           <animate attributeName="y1" from="45" to="150" dur="5s" repeatCount="indefinite"/>
       </line>
+      <rect x="250" y="85" width="20" height="70" fill="saddlebrown"/>
+      <circle cx="260" cy="200" r="25" fill="forestgreen">
+          <animate attributeName="cy" from="200" to="90" dur="5s" begin="click"/>
+      </circle>
+      <ellipse cx="350" cy="50" rx="55" ry="35" fill="white" opacity="0.25">
+          <animate attributeName="cx" from="350" to="100" begin="mouseover" dur="5s"/>
+      </ellipse>
+      <circle cx="500" cy="0" r="70" fill="yellow">
+          <animate attributeName="fill" from="yellow" to="red" dur="5s" begin="mouseover"/>
+      <circle/>
     </svg>
+    <p>But from his fall, his son grew.</p>
   </body>
 </html>
